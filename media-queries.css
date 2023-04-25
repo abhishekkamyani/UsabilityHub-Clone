@@ -1,0 +1,140 @@
+/* tablets view-port */
+@media screen and (max-width: 991px){
+
+    h3{
+        font-size: 1.2rem;
+    }
+
+    /* main navigation settings */
+    .nav-toggle{
+        display: block;
+    }
+    
+    .main-nav{
+        overflow: initial;        /* like overflow: visible (from hidden to visible) */
+        transition: 0.2s ease-out;
+    }
+
+    .nav-links{
+        position: absolute;
+        background-color: white;
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.2s ease-out;
+    }
+
+    .nav-links.active{
+        left: 0;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+    }
+
+    /* examples section settings */
+    .examples-area{
+        gap: 20px;
+    }
+    .examples-card{
+        width: calc(50% - 10px);
+        height: 180px;
+    }
+
+    /* cta section settings */
+    .cta-section{
+        padding-block: 80px;
+    }
+}
+
+
+/* large-mobiles view-port */
+@media screen and (max-width: 767px) {
+    h1{
+        font-size: 2.1rem;
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+
+    /* utility classes */
+    .primary-button{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* header settings */
+    .header-section{
+        flex-direction: column-reverse;
+    }
+    .header-left{
+        width: 100vw;
+        text-align: center;
+    }
+
+    /* feauture section settings */
+    .feature-section{
+        background-image: none;
+    }
+    .features-card{
+        min-width: calc(50% - 10px);
+    }
+
+    /* big feature section settings */
+    .big-feature-section{
+        padding-top: 100px;
+    }
+    .big-feature-container, #second-big-feature{
+        flex-direction: column;
+    }
+    .big-feature-container{
+        gap: 40px;
+    }
+
+    /* footer settings */
+    .footer-container{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        align-items: center;
+    }
+    .link-column{
+        align-items: stretch;
+    }
+}
+
+/* medium-mobiles view-port */
+@media screen and (max-width: 479px){
+    
+    /* reset */
+    :roor{
+        --padding-inline-section: 10px;
+    }
+    
+    /* text settings */
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    /* h3 and p are set in previous media queries */
+
+     /* feauture section settings */
+    .features-card{
+        min-width: 100%;
+        margin-block: 10px;
+    }
+
+     /* examples section settings */
+     .examples-area{
+        gap: 20px;
+    }
+    .examples-card{
+        width: 100%;
+    }
+}
