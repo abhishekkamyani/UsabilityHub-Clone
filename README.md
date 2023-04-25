@@ -17,5 +17,5 @@ Clone the repository
 Open the index.html file in a web browser to view the clone of the Usability Hub home page
 Contributors:
 
-Abhishek Kumar (Your Name)
+Abhishek Kumar
 Feel free to customize the description as needed to reflect your specific project and add any additional details or acknowledgements.
